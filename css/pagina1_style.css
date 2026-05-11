@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url(../images/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e6c8ff;
+  touch-action: none;
+}
+
+#caja_principal_pagina1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#caja_principal_pagina1 h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 10px rgba(18, 1, 1, 0.685);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#texto {
+  background-color: rgba(196, 189, 189, 0.74);
+  box-shadow:
+    0 0 10px 7px rgba(199, 191, 191, 0.685),
+    0 0 10px 7px rgba(229, 15, 245, 0.4),
+    0 0 10px 7px;
+  border-radius: 20px;
+  width: auto;
+  max-width: 1000px;
+  height: auto;
+  opacity: 0.9;
+  padding: 5px;
+  margin-bottom: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 100;
+}
+
+#fondo_movimiento {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes flor {
+  0% {
+    background-color: transparent;
+    transform: translateY(-30%);
+  }
+  100% {
+    background-color: transparent;
+    transform: translateY(100%);
+  }
+}
+
+.flor {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  animation: flor 15s ease infinite;
+  opacity: 0.8;
+  transform: translateY(-100%);
+}
+
+.flor:nth-child(1) {
+  animation-delay: 0s;
+  left: 0%;
+  animation-duration: 15s;
+  width: 150px;
+}
+.flor:nth-child(2) {
+  animation-delay: 3s;
+  left: 12%;
+  animation-duration: 12s;
+  width: 100px;
+}
+.flor:nth-child(3) {
+  animation-delay: 3.5s;
+  left: 25%;
+  animation-duration: 15s;
+  width: 150px;
+}
+.flor:nth-child(4) {
+  animation-delay: 0s;
+  left: 35%;
+  animation-duration: 12s;
+  width: 125px;
+}
+.flor:nth-child(5) {
+  animation-delay: 2s;
+  left: 45%;
+  animation-duration: 15s;
+  width: 100px;
+}
+.flor:nth-child(6) {
+  animation-delay: 3.5s;
+  left: 55%;
+  animation-duration: 12s;
+  width: 125px;
+}
+.flor:nth-child(7) {
+  animation-delay: 0s;
+  left: 65%;
+  animation-duration: 15s;
+  width: 150px;
+}
+.flor:nth-child(8) {
+  animation-delay: 2s;
+  left: 75%;
+  animation-duration: 12s;
+  width: 100px;
+}
+.flor:nth-child(9) {
+  animation-delay: 3.5s;
+  left: 85%;
+  animation-duration: 15s;
+  width: 150px;
+}
+.flor:nth-child(10) {
+  animation-delay: 0s;
+  left: 95%;
+  animation-duration: 12s;
+  width: 125px;
+}
+.flor:nth-child(11) {
+  animation-delay: 2s;
+  left: 100%;
+  animation-duration: 15s;
+  width: 100px;
+}
+.flor:nth-child(12) {
+  animation-delay: 0s;
+  left: 15%;
+  animation-duration: 12s;
+  width: 150px;
+}
+.flor:nth-child(13) {
+  animation-delay: 6s;
+  left: 40%;
+  animation-duration: 15s;
+  width: 150px;
+}
+.flor:nth-child(14) {
+  animation-delay: 5.5s;
+  left: 60%;
+  animation-duration: 12s;
+  width: 125px;
+}
+.flor:nth-child(15) {
+  animation-delay: 6s;
+  left: 80%;
+  animation-duration: 15s;
+  width: 100px;
+}
+.flor:nth-child(16) {
+  animation-delay: 7s;
+  left: 90%;
+  animation-duration: 12s;
+  width: 125px;
+}
+.flor:nth-child(17) {
+  animation-delay: 4.5s;
+  left: 5%;
+  animation-duration: 15s;
+  width: 100px;
+}
+
+.petalo_flotante {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 30%;
+  top: 60%;
+  transform: translate(0%, -50%);
+  user-select: none;
+  z-index: 100;
+  opacity: 0.9;
+}
+
+#image-track .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  cursor: pointer;
+}
+
+/* 2. MEDIA QUERY: Ajuste de proporciones para Celulares */
+@media (max-width: 768px) {
+  #texto {
+    font-size: 18px; 
+  }
+  #image-track {
+    gap: 4vw;
+  }
+  #image-track .image {
+    width: 70vw; /* Imágenes más anchas para abarcar mejor la pantalla móvil */
+    height: 100vw;
+  }
+}
+
+/* -- YouTube Link Styles (Se mantienen igual) -- */
+body.menu-toggled > .meta-link > span {
+  color: rgb(30, 30, 30);
+}
+#source-link {
+  bottom: 60px;
+}
+#source-link > i {
+  color: rgb(94, 106, 210);
+}
+#yt-link > i {
+  color: rgb(239, 83, 80);
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: whitesmoke;
+  border: 3px solid rgb(75, 3, 83);
+  border-radius: 6px;
+  bottom: 10px;
+  box-shadow: 2px 2px 2px rgb(75, 3, 83);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition:
+    background-color 400ms,
+    border-color 400ms;
+  z-index: 10000;
+  color: rgb(75, 3, 83);
+}
+
+.meta-link:hover {
+  background-color: rgba(75, 3, 83, 0.8);
+  border: 1.5px solid white;
+  color: white;
+}
+
+.meta-link > i,
+.meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+.meta-link > span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+/* Boton de musica */
+
+/* 1. EL CONTENEDOR PRINCIPAL */
+.contenedor-boton-magico {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px; /* Tamaño fijo */
+  height: 60px; /* Tamaño fijo para garantizar el cuadrado perfecto */
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 50%; /* Asegura la forma circular desde la base */
+  animation: levitacion 3s ease-in-out infinite;
+}
+
+/* 2. EL BOTÓN EN SÍ (La burbuja de cristal) */
+.boton-flotante-magico {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* CÍRCULO PERFECTO Y ESTRICTO */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Reseteo limpio de los estilos del botón */
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Evita que el borde deforme el círculo */
+
+  /* Efecto cristal con un tinte morado más notorio */
+  background: rgba(140, 70, 180, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Borde morado fuerte y definido (tu color original) */
+  border: 3px solid #542d62;
+
+  /* Sombra para resaltar */
+  box-shadow: 0 5px 15px rgba(84, 45, 98, 0.5);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+/* Estilo para el icono musical */
+.nota-musical {
+  font-size: 26px;
+  z-index: 3;
+  line-height: 1; /* Evita que el texto interior empuje los bordes */
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
+}
+
+/* 3. LA AURA GIRATORIA (Morados intensos) */
+.aura-energia {
+  width: 150%;
+  height: 150%;
+  /* Degradado con morados oscuros y vibrantes */
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 0.75) 0%,
+    rgba(84, 45, 98, 0.5) 50%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  filter: blur(6px);
+
+  /* Mezcla normal para no lavar el color */
+  mix-blend-mode: normal;
+
+  animation: giro-energia 1.5s linear infinite;
+  z-index: 1;
+  pointer-events: none; /* Evita que el aura bloquee el clic al botón */
+}
+
+/* 4. DESTELLOS ADICIONALES (En tonos violeta) */
+.destellos {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  background:
+    radial-gradient(circle, rgba(200, 100, 255, 1) 4%, transparent 10%) 50% 50%,
+    radial-gradient(circle, rgba(255, 255, 255, 1) 2%, transparent 8%) 20% 30%,
+    radial-gradient(circle, rgba(160, 50, 220, 1) 4%, transparent 9%) 80% 70%;
+  background-size:
+    100% 100%,
+    20px 20px,
+    30px 30px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  filter: blur(1px);
+  animation: giro-energia 0.7s linear infinite reverse;
+  z-index: 1;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* HOVER Y ESTADO ACTIVO */
+.contenedor-boton-magico:hover .boton-flotante-magico {
+  background: rgba(
+    140,
+    70,
+    180,
+    0.4
+  ); /* El cristal se tiñe más de morado al pasar el mouse */
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(84, 45, 98, 0.8);
+}
+
+.contenedor-boton-magico:hover .aura-energia {
+  transform: scale(1.1);
+}
+
+/* Estilo para cuando la música está sonando */
+.contenedor-boton-magico.musica-sonando .nota-musical {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+}
+
+.contenedor-boton-magico.musica-sonando .aura-energia {
+  animation-duration: 0.8s; /* Gira más rápido */
+  /* Los morados se vuelven aún más vivos al sonar */
+  background: radial-gradient(
+    circle,
+    rgba(160, 60, 255, 0.9) 0%,
+    rgba(100, 30, 140, 0.6) 50%,
+    transparent 70%
+  );
+}
+
+/* ANIMACIONES */
+@keyframes levitacion {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes giro-energia {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
